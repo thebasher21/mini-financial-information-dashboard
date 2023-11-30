@@ -1,0 +1,13 @@
+.companyFinancials {
+  display: flex;
+  text-align: start;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.viewDetailsButtonContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

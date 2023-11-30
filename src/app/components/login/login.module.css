@@ -1,0 +1,39 @@
+.main {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: monospace;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  background-color: #2c2c2c;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
+  color: white;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorMessageContainer {
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.errorMessage {
+  color: red;
+}

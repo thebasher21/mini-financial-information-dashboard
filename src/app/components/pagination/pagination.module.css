@@ -1,0 +1,28 @@
+.paginationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.pageNumberContainer {
+  display: inline-block;
+  width: 3rem;
+}
+
+.pageNumberContainer > input {
+  width: 100%;
+  text-align: center;
+}
+
+.setPageItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.setPageItems > select {
+  width: 5rem;
+  text-align: start;
+}
