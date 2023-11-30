@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  generateStaticParams: async () => {
-    return {
-      "/": { page: "/" },
-      "/pages/login": { page: "/pages/login" },
-    };
-  },
+  output: "export",
 };
 
 module.exports = nextConfig;
