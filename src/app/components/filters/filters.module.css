@@ -5,12 +5,9 @@
   padding-bottom: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
-  /* margin-top: 2vh; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* border: 1px solid black; */
-  /* margin-bottom: 20px; */
   border-radius: 5px;
   background-color: #2c2c2c;
   color: white;

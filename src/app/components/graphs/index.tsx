@@ -13,7 +13,6 @@ import {
   Legend,
 } from "chart.js";
 import { ChartData } from "chart.js/auto";
-// Register ChartJS components using ChartJS.register
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, ArcElement);
 type GraphsComponentProps = {
   companies: CompanyInformation[];

@@ -94,23 +94,9 @@ export default function Home() {
               return applyFilters(company);
             }).length / prev.itemsPerPage
           );
-          /* let itemsPerPage: number = prev.itemsPerPage;
-          if (totalPages > 6) {
-            itemsPerPage = Math.ceil(
-              allCompaniesInformation.filter((company) => {
-                return applyFilters(company);
-              }).length / 6
-            );
-            totalPages = Math.ceil(
-              allCompaniesInformation.filter((company) => {
-                return applyFilters(company);
-              }).length / itemsPerPage
-            );
-          } */
           return {
             ...prev,
             currentPage: 1,
-            // itemsPerPage: itemsPerPage,
             totalPages: totalPages,
           };
         });
@@ -197,33 +183,3 @@ export default function Home() {
     </main>
   );
 }
-
-/* 
-<div className={styles.creditInfoContainer}>
-            <div className={styles.creditInfoGrid}>
-              {new Array(numCompanies).map((val, ind) => {
-                console.log(ind);
-                return (
-                  <div className="card" aria-hidden="true" key={ind}>
-                    <div className="card-body">
-                      <h5 className="card-title placeholder-glow">
-                        <span className="placeholder col-6"></span>
-                      </h5>
-                      <p className="card-text placeholder-glow">
-                        <span className="placeholder col-7"></span>
-                        <span className="placeholder col-4"></span>
-                        <span className="placeholder col-4"></span>
-                        <span className="placeholder col-6"></span>
-                        <span className="placeholder col-8"></span>
-                      </p>
-                      <a
-                        className="btn btn-primary disabled placeholder col-6"
-                        aria-disabled="true"
-                      ></a>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-*/

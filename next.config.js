@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  exportPathMap: function () {
+  generateStaticParams: async () => {
     return {
       "/": { page: "/" },
+      "/pages/login": { page: "/pages/login" },
     };
   },
 };

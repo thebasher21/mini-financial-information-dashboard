@@ -36,7 +36,6 @@ export default function Login() {
       let token = sessionStorage.getItem("userLoginToken");
       if (token) {
         token = window.atob(token);
-        // console.log(token);
         let { isAuthenticated, error } = authenticate({
           username: token.split("_")[0],
           password: token.split("_")[1],
@@ -56,14 +55,10 @@ export default function Login() {
     e.preventDefault();
     let { isAuthenticated, error } = authenticate(userDetails);
     if (isAuthenticated) {
-      // Redirect to the home page on successful login
       setErrorMessage("");
       router.push("/");
     } else {
       setErrorMessage(error);
-      //   console.log(errorMessage);
-      // Handle authentication failure (show error message, etc.)
-      //   console.log("Authentication failed");
     }
   };
   return (
@@ -102,9 +97,6 @@ export default function Login() {
                   handleChange(e);
                 }}
               />
-              {/* <span id="usernameValidationFeedback" className="invalid-feedback">
-              {errorMessage}
-            </span> */}
             </div>
             <div className={`input-group mb-3`}>
               <label
@@ -126,9 +118,6 @@ export default function Login() {
                   handleChange(e);
                 }}
               />
-              {/* <span id="passwordValidationFeedback" className="invalid-feedback">
-              {errorMessage}
-            </span> */}
             </div>
             <button type="submit" className="btn btn-primary btn-md">
               LOGIN
