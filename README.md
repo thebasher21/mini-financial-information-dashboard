@@ -4,7 +4,7 @@ Welcome to the Mini Financial Information Dashboard! This application provides a
 
 ## View the Application
 
-To view the application, visit [Mini Financial Information Dashboard](https://thebasher21.github.io/mini-financial-information-dashboard).
+To view the application, visit [Mini Financial Information Dashboard](https://mini-financial-information-dashboard.vercel.app/).
 
 ## Login Credentials
 
