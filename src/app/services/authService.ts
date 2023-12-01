@@ -1,3 +1,4 @@
+"use client";
 import { UserDetails } from "../components/login/login";
 
 let userDetails: UserDetails = {

@@ -2,6 +2,9 @@
   "name": "mini-financial-info-dashboard",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "url": "https://github.com/thebasher21/mini-financial-information-dashboard.git"
+  },
   "homepage": "https://thebasher21.github.io/mini-financial-information-dashboard",
   "scripts": {
     "dev": "next dev",
@@ -17,6 +20,7 @@
     "bootstrap": "^5.3.2",
     "chart.js": "^4.4.0",
     "next": "14.0.3",
+    "node-fetch": "^3.3.2",
     "react": "^18",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18"
