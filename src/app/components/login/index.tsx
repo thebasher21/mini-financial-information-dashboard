@@ -73,7 +73,10 @@ export default function Login() {
             className={styles.loginForm}
           >
             {errorMessage.length > 0 && (
-              <div className={styles.errorMessageContainer}>
+              <div
+                className={styles.errorMessageContainer}
+                data-testid="loginErrorMessage"
+              >
                 <span className={styles.errorMessage}>{errorMessage}</span>
               </div>
             )}

@@ -1,6 +1,6 @@
 "use client";
 
-import Login from "../../components/login/login";
+import Login from "../../components/login";
 
 export default function Landing() {
   return <Login />;

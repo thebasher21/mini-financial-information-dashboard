@@ -1,5 +1,5 @@
 "use client";
-import { UserDetails } from "../components/login/login";
+import { UserDetails } from "../components/login";
 
 let userDetails: UserDetails = {
   username: "",

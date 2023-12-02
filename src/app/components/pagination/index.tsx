@@ -14,7 +14,7 @@ type PaginationProps = {
 
 export default function Pagination(props: PaginationProps) {
   function handlePaginationChange(e: ChangeEvent<HTMLInputElement>) {
-    e.preventDefault();
+    // e.preventDefault();
     let newPage: number = parseInt(e.currentTarget.value);
     if (newPage !== props.pagination.currentPage) {
       props.setPagination((prev) => {
@@ -142,7 +142,7 @@ export default function Pagination(props: PaginationProps) {
             <button
               className="page-link text-bg-dark"
               onClick={handleGotoLastPage}
-              aria-label="Next"
+              aria-label="Last"
               type="button"
             >
               <span aria-hidden="true">&gt;&gt;</span>
